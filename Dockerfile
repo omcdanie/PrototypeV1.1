@@ -20,15 +20,13 @@ RUN /usr/bin/passenger-config validate-install
 RUN useradd bucketful -m -s /bin/bash
 RUN mkdir -p /var/www/bucketful
 
-# deploy the app
-WORKDIR /var/www/bucketful
-COPY .build/PrototypeV1.1.tar.gz .
-RUN tar xzf PrototypeV1.1.tar.gz
-RUN chown -R bucketful:bucketful .
-
 # add passenger json
 WORKDIR /var/www/bucketful/bundle
-COPY Passengerfile.json .
+COPY --chown=bucketful:bucketful Passengerfile.json .
+
+# deploy the app
+WORKDIR /var/www/bucketful
+COPY --chown=bucketful:bucketful .build/ .
 
 # install npm packages
 WORKDIR /var/www/bucketful/bundle/programs/server
