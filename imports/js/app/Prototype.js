@@ -4,6 +4,7 @@ import { render } from 'react-dom';
 
 import LoginComponent from '../verification/LoginView';
 import LogoComponent from './Logo';
+import Home from '../homePage/HomePageView';
 
 let isSignedIn = false;
 
@@ -26,7 +27,7 @@ function renderLogin() {
 }
 
 function renderHome() {
-    render(<HomeComponent/>, document.getElementById('home-component'));
+    render(<Home/>, document.getElementById('home-component'));
 }
 
 export function setSignedIn(parameters) {

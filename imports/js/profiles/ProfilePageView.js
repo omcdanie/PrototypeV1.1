@@ -1,8 +1,6 @@
 import React from 'react';
 
 import activeUser from '/imports/js/verification/LoginView';
-import activeBucket from '/imports/js/buckets/BucketView';
-import reserveBucket from '/imports/js/buckets/BucketView';
 import Bucket from 'imports/js/buckets/BucketView';
 
 import bucketStyle from 'imports/css/bucket/bucketSheet.css';
@@ -10,8 +8,7 @@ import bucketStyle from 'imports/css/bucket/bucketSheet.css';
 class Profile extends React.Component {
     constructor(props) {
         super(props);
-        this.activeBucket = {activeBucket};
-        this.reserveBucket = {reserveBucket};
+
         this.activeUser = {activeUser};
     }
 
@@ -20,11 +17,11 @@ class Profile extends React.Component {
             <div className={bucketStyle["bucket-box"]}>
                 <Bucket>
                     <h2>Active</h2>
-                    this.activeBucket;
+
                 </Bucket>
                 <Bucket>
                     <h2>Reserve</h2>
-                    reserveBucket;
+
                 </Bucket>
             </div>
         );
