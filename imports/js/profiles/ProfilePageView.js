@@ -4,6 +4,7 @@ import {Component} from 'react';
 import activeUser from '/imports/js/verification/LoginView';
 import activeBucket from '/imports/js/buckets/BucketView';
 import reserveBucket from '/imports/js/buckets/BucketView';
+import Bucket from 'imports/js/buckets/BucketView';
 
 
 class Profile extends Component {
@@ -16,14 +17,12 @@ class Profile extends Component {
 
     render() {
         return (
-            <div id={'atv'} className={"bucket-container"}>
-                <h2>Active Bucket</h2>
-                <button>activeBucket</button>
+            <div className={"bucket-box"}>
+                <Bucket>Active</Bucket>
+                <Bucket>Reserve</Bucket>
             </div>
         );
     }
-
 }
-
 
 export default Profile;

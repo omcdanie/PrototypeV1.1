@@ -120,7 +120,7 @@ body {
 }
 
 .hero-item {
-    background-image: url("/public/images/cooking-ingredient-cuisine-kitchen.jpg");
+    background-image: url("../../../public/images/cooking-ingredient-cuisine-kitchen.jpg");
 }
 
 .standard-item:nth-child(2) {

@@ -1,50 +1,5 @@
-/* CSS declarations go here */
-
 @import url("/imports/css/profile/profileSheet.css");
 @import url("/imports/css/bucket/bucketSheet.css");
 @import url("/imports/css/verification/LoginSheet.css");
-
-/*Style the header div*/
-#header {
-    width: auto;
-    padding: 2px;
-    margin: 5px;
-    background-color: ivory;
-    position: page;
-}
-
-/*Style the footer div*/
-#footer {
-    width: auto;
-    padding: 2px;
-    margin: 5px;
-    background-color: ivory;
-    position: page;
-}
-
-#body {
-    background-color: darkgrey;
-    position: relative;
-}
-
-.prototype-title-font {
-    font-family: Magneto, fantasy;
-    font-size: 1.75em; /*28px/16 = 1.75em*/
-    text-align: center;
-}
-
-li.prototype-nav-button-left {
-    display: block;
-    background-color: lightslategray;
-    text-align: center;
-    float: left;
-}
-
-li.prototype-nav-button-right {
-    display: inline-block;
-    background-color: black;
-    text-align: center;
-    padding: 5px;
-    float: right;
-}
+@import url("/imports/css/home/HomeSheet.css");
 

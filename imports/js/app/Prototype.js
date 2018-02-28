@@ -32,5 +32,4 @@ function renderHome() {
 
 export function setSignedIn(parameters) {
     isSignedIn = parameters.bool;
-    //return (renderHome());
 }
