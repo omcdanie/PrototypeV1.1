@@ -1,42 +1,7 @@
-
 <head>
     <meta charset="UTF-8">
     <title>Secure Login</title>
-    <!--link rel="stylesheet" href="../../css/verification/LoginSheet.css"-->
-    <!--script language="javascript" src="../../js/verification/LoginView.js"></script-->
-    <script>
-        let userId;
-        let pwd;
-        function check() {
-            userId = document.forms["login"]["userId"].value;
-            pwd = document.forms["login"]["pswrd"].value;
-            if (userId === "admin" && pwd === "123") {
-                window.open("https://www.depaul.edu/Pages/default.aspx");
-                console.log('clicked');
-                return true;
-            }
-            alert("The username and password you entered did not match what is on file");
-            return false;
-        }
-
-    </script>
-    <style></style>
 </head>
-<body oncontextmenu="return false">
 
-<div class="body"></div>
-<div class="grad"></div>
-<div class="header">
-    <div>Bucketful</div>
-</div>
-<br>
-<!--action="/imports/js/verification/LoginView.js"-->
-<form name="login" action="/imports/js/verification/LoginView.js" onsubmit=check();>
-    <div class="login">
-        <input type="text" placeholder="username" name="userId" /><br>
-        <input type="password" placeholder="password" name="pswrd" /><br>
-        <input type="submit" value="Login"/><br>
-    </div>
-</form>
-
+<body>
 </body>

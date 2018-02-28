@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+body {
+    margin: auto;
+    background-color: #0F4F73;
+}
+
+.header {
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    color: #D4541B;
+    font-size: 54px;
+    font-weight: 200;
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+.login {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    margin: auto;
+}
+
+.login input[type=text] {
+    width: 246px;
+    height: 35px;
+    background: RGBA(212, 84, 27, 0.1);
+    border: 1px solid RGBA(212, 84, 27, 1.00);
+    border-radius: 5px;
+    color: #A9A9A9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.login input[type=password] {
+    width: 246px;
+    height: 35px;
+    background: RGBA(212, 84, 27, 0.1);
+    border: 1px solid RGBA(212, 84, 27, 1.00);
+    border-radius: 5px;
+    color: #A9A9A9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.login input[type=submit] {
+    border: 1px solid #D4541B;
+    float: right;
+    width: 123px;
+    height: 35px;
+    background: #D4541B;
+    border: 1px solid #D4541B;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #063651/*#A9A9A9*/;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.login input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.login input[type=submit]:active {
+    opacity: 0.6;
+}
+
+.login input[type=url]:hover {
+    font-weight: 200;
+    font-size: 19px;
+}
+
+.login input[type=url]:active {
+    font-size: 17px;
+}
+
+.login input[type=text]:focus {
+    outline: none;
+    border: 1px solid rgba(212, 84, 27, 0.8);
+}
+
+.login input[type=password]:focus {
+    outline: none;
+    border: 1px solid rgba(212, 84, 27, 0.8);
+}
+
+.login input[type=button]:focus {
+    outline: none;
+}
+
+.login {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    margin: auto;
+}
+
+.box {
+    float: right;
+    border: 1px solid #D4541B;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+a:link {
+    float: right;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #A9A9A9;
+    margin-top: 5px;
+    margin-right: 35px;
+}
+
+a:hover {
+    font-weight: 300;
+}
+
+a:visited {
+    color: white;
+}
