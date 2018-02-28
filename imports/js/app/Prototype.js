@@ -1,20 +1,21 @@
 import React from 'react';
+
 import { render } from 'react-dom';
-import Profile from '../profiles/ProfilePageView';
-import {loadedProfile} from "../profiles/ProfilePageView";
+
 import LoginComponent from '../verification/LoginView';
 import LogoComponent from './Logo';
+import Home from '../homePage/HomePageView';
 
-var signedIn = false;
+let isSignedIn = false;
 
 export default class Prototype extends React.Component {
 
     // Loads the initial page (Login or Profile)
     static startup() {
-        if (signedIn === true) {
-            renderHome()
+        if (isSignedIn === true) {
+            return(renderHome());
         } else {
-            renderLogin()
+            return(renderLogin());
         }
     }
 }
@@ -26,16 +27,9 @@ function renderLogin() {
 }
 
 function renderHome() {
-    // TODO: render home page
-    window.open("https://www.depaul.edu/");
-    window.close();
+    render(<Home/>, document.getElementById('home-component'));
 }
 
-function renderProfile() {
-    // TODO: render profile page
-}
-
-export function setSignedIn(bool) {
-    signedIn = bool;
-    renderHome();
+export function setSignedIn(parameters) {
+    isSignedIn = parameters.bool;
 }
