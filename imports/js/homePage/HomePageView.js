@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from 'react';
 
 import ButtonPanel from "./ButtonPanel";
-import "../imports/home/App.css";
+import "../imports/css/home/HomeSheet.css";
 
 class Home extends Component {
 	constructor(props) {
