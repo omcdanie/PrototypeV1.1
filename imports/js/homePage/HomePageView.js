@@ -1,10 +1,9 @@
 import React from "react";
-import { Component } from 'react';
 
 import ButtonPanel from "./ButtonPanel";
-import "../imports/css/home/HomeSheet.css";
+import "/imports/css/home/HomeSheet.css";
 
-class Home extends Component {
+class Home extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
