@@ -1,15 +1,8 @@
 import React from 'react';
-//import {render} from 'react-dom';
 import {Component} from 'react';
-import classNames from 'classnames/bind';
 
 import bucket from "/imports/css/bucket/bucketSheet.css";
 import EventList from "./userLists/ListView";
-
-//let bucketDesign = classNames.bind(bucket);
-
-let activeBucket = null;
-let reserveBucket;
 
 export default class Bucket extends Component {
 
@@ -56,30 +49,4 @@ export default class Bucket extends Component {
             text: ''
         }));
     }
-
-
-    // buckets = function createBucket() {
-    //     const bucketBuilder = (
-    //         <script> document.createElement("bucket") </script>
-    //     );
-    //     render(bucketBuilder, document.getElementById('root'));
-    // };
-    //
-    // bucketDesign = function bucketDesigner() {
-    //     let bucketClass = bucketDesign({});
-    //     return <button className={bucketClass}>Active Profile</button>;
-    // };
-    //
-    // activeBucket = function loadActiveBucket() {
-    //     const bucketElement = (
-    //
-    //         <div id={'root'}>
-    //             buckets;
-    //             <h3>Active Bucket</h3>
-    //             bucketDesign;
-    //         </div>
-    //     );
-    //     render(bucketElement, document.getElementById('root'));
-    // };
-
 }

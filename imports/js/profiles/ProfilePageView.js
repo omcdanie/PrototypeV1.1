@@ -18,8 +18,14 @@ class Profile extends Component {
     render() {
         return (
             <div className={"bucket-box"}>
-                <Bucket>Active</Bucket>
-                <Bucket>Reserve</Bucket>
+                <Bucket>
+                    <h2>Active</h2>
+                    activeBucket;
+                </Bucket>
+                <Bucket>
+                    <h2>Reserve</h2>
+                    reserveBucket;
+                </Bucket>
             </div>
         );
     }
