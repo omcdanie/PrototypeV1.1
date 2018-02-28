@@ -1,4 +1,4 @@
-import React from 'react-dom';
+import React from 'react';
 import {Component} from 'react';
 
 import activeUser from '/imports/js/verification/LoginView';
@@ -6,6 +6,7 @@ import activeBucket from '/imports/js/buckets/BucketView';
 import reserveBucket from '/imports/js/buckets/BucketView';
 import Bucket from 'imports/js/buckets/BucketView';
 
+import bucketStyle from 'imports/css/bucket/bucketSheet.css';
 
 class Profile extends Component {
     constructor(props) {
