@@ -1,16 +1,29 @@
-import React, {Component} from 'react';
-import {userId} from '../verification/LoginView';
+import React from 'react-dom';
+import {Component} from 'react';
 
-export let loadedProfile;
+import activeUser from '/imports/js/verification/LoginView';
+import activeBucket from '/imports/js/buckets/BucketView';
+import reserveBucket from '/imports/js/buckets/BucketView';
 
-export default class ProfilePageView extends Component {
-    loadedProfile = function LoadProfile(userId) {
-        if (userId !== 'undefined') {
-            alert("Loading List");
-        }
-    };
 
+class Profile extends Component {
+    constructor(props) {
+        super(props);
+        this.activeBucket = {activeBucket};
+        this.reserveBucket = {reserveBucket};
+        this.activeUser = {activeUser};
+    }
+
+    render() {
+        return (
+            <div id={'atv'} className={"bucket-container"}>
+                <h2>Active Bucket</h2>
+                <button>activeBucket</button>
+            </div>
+        );
+    }
 
 }
 
 
+export default Profile;
