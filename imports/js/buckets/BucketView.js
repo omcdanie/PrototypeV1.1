@@ -1,10 +1,9 @@
 import React from 'react';
-import {Component} from 'react';
 
 import bucket from "/imports/css/bucket/bucketSheet.css";
 import EventList from "./userLists/ListView";
 
-export default class Bucket extends Component {
+export default class Bucket extends React.Component {
 
     constructor(props) {
         super(props);

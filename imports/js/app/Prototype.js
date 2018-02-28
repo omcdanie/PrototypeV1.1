@@ -1,5 +1,5 @@
 import React from 'react';
-import {Component} from 'react';
+
 import { render } from 'react-dom';
 
 import LoginComponent from '../verification/LoginView';
@@ -7,7 +7,7 @@ import LogoComponent from './Logo';
 
 let isSignedIn = false;
 
-export default class Prototype extends Component {
+export default class Prototype extends React.Component {
 
     // Loads the initial page (Login or Profile)
     static startup() {
