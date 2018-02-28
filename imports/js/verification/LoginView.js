@@ -1,12 +1,15 @@
 import React from 'react';
+import {Component} from 'react';
 
 import style from '../../css/verification/LoginSheet.css';
 import { setSignedIn } from '../app/Prototype';
+import Profile from '../profiles/ProfilePageView';
+import {render} from "react-dom";
 
-var userId;
-var password;
+let userId;
+let password;
 
-export default class LoginComponent extends React.Component {
+export default class LoginComponent extends Component {
     render () {
         return (
             <form>
@@ -20,13 +23,18 @@ export default class LoginComponent extends React.Component {
         );
     }
 
-    login() {
+     login() {
         userId = document.getElementById("userId").value;
         password = document.getElementById("password").value;
         if (userId === "admin" && password === "123") {
-            setSignedIn(true);
+            setSignedIn({bool: true});
+            return (this.renderProfile());
         } else {
-            alert("The username and password you entered did not match what is on file");
+            return(alert("The username and password you entered did not match what is on file"));
         }
+    }
+
+    static renderProfile() {
+        render(<Profile/>, document.getElementById('active-profile'));
     }
 }

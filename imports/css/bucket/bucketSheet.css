@@ -1,0 +1,19 @@
+.bucket-box {
+    background-color: #A9A9A9;
+    border: #D4541B 5px;
+    padding: 15px;
+    align-content: center;
+}
+
+.list-box {
+    background-color: #0f4f73;
+    border: #D4541B;
+    padding: 5px;
+    align-content: center;
+}
+
+.bucket-title-font {
+    font-family: Magneto, fantasy;
+    font-size: 1.75em; /*28px/16 = 1.75em*/
+    text-align: center;
+}
