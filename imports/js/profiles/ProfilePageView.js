@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {userId} from '/verification/LoginView';
+import {userId} from '../verification/LoginView';
 
 export let loadedProfile;
 
