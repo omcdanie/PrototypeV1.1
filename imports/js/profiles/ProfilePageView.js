@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from "react";
 
 import activeUser from '/imports/js/verification/LoginView';
 import Bucket from '/imports/js/buckets/BucketView';
 
 import bucketStyle from '/imports/css/bucket/bucketSheet.css';
 
-class Profile extends React.Component {
+class Profile extends Component {
     constructor(props) {
         super(props);
 

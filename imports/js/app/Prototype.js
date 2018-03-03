@@ -1,33 +1,26 @@
-import React from 'react';
-
-import { render } from 'react-dom';
+import React, {Component} from 'react';
+import {Route, HashRouter} from 'react-router-dom';
 
 import LoginComponent from '../verification/LoginView';
-import LogoComponent from './Logo';
+import BannerComponent from './Banner';
 import Home from '../homePage/HomePageView';
 
 let isSignedIn = false;
 
-export default class Prototype extends React.Component {
+export default class Prototype extends Component {
 
-    // Loads the initial page (Login or Profile)
-    static startup() {
-        if (isSignedIn === true) {
-            return(renderHome());
-        } else {
-            return(renderLogin());
-        }
+    render() {
+        return (
+            <HashRouter>
+                <div>
+                    <Route path='/' component={BannerComponent} />
+                    <Route path='/login' component={LoginComponent} />
+                    <Route path='/home' component={Home} />
+                </div>
+            </HashRouter>
+        );
     }
-}
 
-function renderLogin() {
-    // Renders the login page
-    render(<LoginComponent/>, document.getElementById('login-component'));
-    render(<LogoComponent/>, document.getElementById('logo-component'));
-}
-
-function renderHome() {
-    render(<Home/>, document.getElementById('home-component'));
 }
 
 export function setSignedIn(parameters) {
