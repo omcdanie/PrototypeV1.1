@@ -1,10 +1,12 @@
 import React, {Component} from "react";
 
+import "../../css/app/BannerSheet.css";
+
 export default class BannerComponent extends Component {
     render() {
         return (
-            <div>
-                <button type='button' onClick={() => this.props.history.push('/login')}>Bucketful</button>
+            <div className='banner'>
+                <a href='#/login'>Bucketful</a>
             </div>
         );
     }

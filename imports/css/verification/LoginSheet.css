@@ -98,15 +98,11 @@ body {
     margin: auto;
 }
 
-.box {
-    float: right;
-    border: 1px solid #D4541B;
-    padding: 10px;
-    margin-right: 20px;
-    margin-top: 20px;
+.logo {
+
 }
 
-a:link {
+.login a:link {
     float: right;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
@@ -117,10 +113,10 @@ a:link {
     margin-right: 35px;
 }
 
-a:hover {
+.login a:hover {
     font-weight: 300;
 }
 
-a:visited {
+.login a:visited {
     color: white;
 }
