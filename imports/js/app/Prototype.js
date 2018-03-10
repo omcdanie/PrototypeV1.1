@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Route, HashRouter} from 'react-router-dom';
 
+import LogoComponent from '../app/Logo';
 import LoginComponent from '../verification/LoginView';
-import BannerComponent from './Banner';
+import SignUpMainComponent from '../verification/SignUpMain';
 import Home from '../homePage/HomePageView';
 
 let isSignedIn = false;
@@ -13,8 +14,9 @@ export default class Prototype extends Component {
         return (
             <HashRouter>
                 <div>
-                    <Route path='/' component={BannerComponent} />
+                    <Route path='/' component={LogoComponent} />
                     <Route path='/login' component={LoginComponent} />
+                    <Route path='/signup' component={SignUpMainComponent} />
                     <Route path='/home' component={Home} />
                 </div>
             </HashRouter>

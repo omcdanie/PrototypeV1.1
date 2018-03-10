@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 
-import "../../css/app/BannerSheet.css";
+import "../../css/app/LogoSheet.css";
 
-export default class BannerComponent extends Component {
+export default class LogoComponent extends Component {
     render() {
         return (
-            <div className='banner'>
+            <div className='logo'>
                 <a href='#/login'>Bucketful</a>
             </div>
         );

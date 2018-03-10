@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { Redirect } from 'react-router-dom';
 
 import { setSignedIn } from '../app/Prototype';
-import "../../css/verification/LoginSheet.css";
+import '../../css/verification/LoginSheet.css';
 
 let userId;
 let password;
@@ -25,12 +25,12 @@ class LoginComponent extends Component {
                     <div className="login">
                         <input id="userId" type="text" placeholder="username" /><br/>
                         <input id="password" type="password" placeholder="password" /><br/>
-                        <input  type="submit" value="Login" /><br/>
-                        <a href='#/home'>Sign Up?</a>
+                        <input type="submit" value="Login" /><br/>
+                        <a href='#/signup'>Sign Up?</a>
                     </div>
                 </form>
                 {this.state.fireRedirect && (
-                    <Redirect to='#/Home'/>
+                    <Redirect to='#/home'/>
                 )}
             </div>
         );
