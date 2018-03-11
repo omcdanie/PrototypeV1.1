@@ -11,3 +11,6 @@ services:
 before_install:
   - docker-compose --version
   - ./bucketful-build.sh
+
+deploy:
+ - docker-machine ls
