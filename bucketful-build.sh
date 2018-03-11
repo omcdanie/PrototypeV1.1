@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-export BUCKETFUL_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-export BUCKETFUL_APP_IMAGE="local/bucketful/$BUCKETFUL_BRANCH"
+export BUCKETFUL_APP_IMAGE="bucketful/prototype1.1"
 
 echo "building meteor bundle ..."
 meteor build --server-only --directory .build
