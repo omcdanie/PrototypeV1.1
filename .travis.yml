@@ -10,3 +10,4 @@ services:
 
 before_install:
   - docker-compose --version
+  - ./bucketful-build.sh
