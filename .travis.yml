@@ -13,4 +13,5 @@ before_install:
   - ./bucketful-build.sh
 
 deploy:
- - docker-machine ls
+  - provider: script
+    script: bash deploy.sh
