@@ -1,18 +1,15 @@
 sudo: required
 
 language: node_js
+
 node_js:
   - "8"
 
-services:
-  - docker
-
 before_install:
-  - curl -L https://github.com/docker/machine/releases/download/v0.14.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine
-  - sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+  - curl "https://install.meteor.com/?release=1.6.1" | /bin/sh
 
-deploy:
-  - provider: script
-    script: bash deploy.sh test
-    on:
-      branch: travis-CI
+
+script:
+  - pwd
+  - meteor --version
+
