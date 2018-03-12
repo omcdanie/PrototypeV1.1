@@ -10,7 +10,6 @@ body {
     position: absolute;
     top: 15px;
     right: 16px;
-    margin: auto;
 }
 
 .login input[type=text] {
@@ -68,15 +67,6 @@ body {
     opacity: 0.6;
 }
 
-.login input[type=url]:hover {
-    font-weight: 200;
-    font-size: 19px;
-}
-
-.login input[type=url]:active {
-    font-size: 17px;
-}
-
 .login input[type=text]:focus {
     outline: none;
     border: 1px solid rgba(212, 84, 27, 0.8);
@@ -87,26 +77,11 @@ body {
     border: 1px solid rgba(212, 84, 27, 0.8);
 }
 
-.login input[type=button]:focus {
+.login input[type=submit]:focus {
     outline: none;
 }
 
-.login {
-    position: absolute;
-    top: 15px;
-    right: 16px;
-    margin: auto;
-}
-
-.box {
-    float: right;
-    border: 1px solid #D4541B;
-    padding: 10px;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-a:link {
+.login a:link {
     float: right;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
@@ -117,10 +92,10 @@ a:link {
     margin-right: 35px;
 }
 
-a:hover {
+.login a:hover {
     font-weight: 300;
 }
 
-a:visited {
+.login a:visited {
     color: white;
 }
