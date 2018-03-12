@@ -14,9 +14,7 @@ export default class SignUpMainComponent extends Component {
     render() {
         return (
             <div>
-                <HashRouter>
-                    <Route path="/signup/confirm" component={ConfirmSignUpComponent}/>
-                </HashRouter>
+                <Route path="#/signup/:confirm" component={ConfirmSignUpComponent}/>
                 <form onSubmit={this.submitSignUp.bind(this)}>
                     <div className="signUp">
                         <h1 className="signUpHeader">Sign up for free!</h1>
@@ -114,7 +112,7 @@ export default class SignUpMainComponent extends Component {
             return;
         }
 
-        this.props.history.push("#/signup/confirm");
+        this.props.history.push("/signup/confirm");
 
     };
 

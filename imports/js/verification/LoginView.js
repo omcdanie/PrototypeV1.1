@@ -25,7 +25,7 @@ class LoginComponent extends Component {
                         <input id="userId" type="text" placeholder="username" /><br/>
                         <input id="password" type="password" placeholder="password" /><br/>
                         <input type="submit" value="Login" /><br/>
-                        <a href='#/signup'>Sign Up?</a>
+                        <a href='/signup'>Sign Up?</a>
                     </div>
                 </form>
                 {this.state.fireRedirect && (
