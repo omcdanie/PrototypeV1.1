@@ -4,7 +4,7 @@ import {Route, HashRouter} from 'react-router-dom';
 import LogoComponent from '../app/Logo';
 import LoginComponent from '../verification/LoginView';
 import SignUpMainComponent from '../verification/SignUpMain';
-import Home from '../homePage/HomePageView';
+import Home from '../homePage/Home';
 
 let isSignedIn = false;
 
