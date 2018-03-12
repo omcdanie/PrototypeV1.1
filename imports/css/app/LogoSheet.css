@@ -10,12 +10,6 @@
     margin-left: 50px;
 
     text-decoration: none;
-
-    -webkit-transform: translate(0, 0);
-    -webkit-transition: -webkit-transform 500ms;
-
-    transform: translate(0, 0);
-    transition: transform 500ms;
 }
 
 .logo a[onmousedown] {

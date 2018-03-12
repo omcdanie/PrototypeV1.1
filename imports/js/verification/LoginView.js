@@ -7,7 +7,6 @@ import '../../css/verification/LoginSheet.css';
 let userId;
 let password;
 
-
 class LoginComponent extends Component {
 
     constructor() {

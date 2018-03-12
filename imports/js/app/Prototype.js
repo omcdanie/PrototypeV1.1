@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route, HashRouter} from 'react-router-dom';
+import {Route, HashRouter, Switch} from 'react-router-dom';
 
 import LogoComponent from '../app/Logo';
 import LoginComponent from '../verification/LoginView';
@@ -15,9 +15,9 @@ export default class Prototype extends Component {
             <HashRouter>
                 <div>
                     <Route path='/' component={LogoComponent} />
-                    <Route path='/login' component={LoginComponent} />
-                    <Route path='/signup' component={SignUpMainComponent} />
-                    <Route path='/home' component={Home} />
+                    <Route exact path='/login' component={LoginComponent} />
+                    <Route exact path='/signup' component={SignUpMainComponent} />
+                    <Route exact path='/home' component={Home} />
                 </div>
             </HashRouter>
         );
