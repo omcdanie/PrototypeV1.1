@@ -1,5 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 
+
+body {
+    margin: auto;
+}
+
+.logo {
+    width: 100%;
+    height: 225px;
+    background-color: #063651;
+}
+
 .logo a {
     font-family: 'Open Sans', sans-serif;
     float: left;
@@ -8,14 +19,7 @@
     font-weight: 200;
     margin-top: 75px;
     margin-left: 50px;
-
     text-decoration: none;
-
-    -webkit-transform: translate(0, 0);
-    -webkit-transition: -webkit-transform 500ms;
-
-    transform: translate(0, 0);
-    transition: transform 500ms;
 }
 
 .logo a[onmousedown] {

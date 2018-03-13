@@ -7,7 +7,6 @@ import '../../css/verification/LoginSheet.css';
 let userId;
 let password;
 
-
 class LoginComponent extends Component {
 
     constructor() {
@@ -25,12 +24,12 @@ class LoginComponent extends Component {
                     <div className="login">
                         <input id="userId" type="text" placeholder="username" /><br/>
                         <input id="password" type="password" placeholder="password" /><br/>
-                        <input type="submit" value="Login" /><br/>
-                        <a href='#/signup'>Sign Up?</a>
+                        <input type="submit" value="Log in" /><br/>
+                        <a href='/signup'>Sign Up</a>
                     </div>
                 </form>
                 {this.state.fireRedirect && (
-                    <Redirect to='#/home'/>
+                    <Redirect to='/profile'/>
                 )}
             </div>
         );
