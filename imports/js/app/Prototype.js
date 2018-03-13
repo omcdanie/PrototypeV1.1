@@ -15,7 +15,7 @@ export default class Prototype extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Route exact path='/' component={BannerComponent} />
+                    <Route exact path='/' component={LogoComponent} />
                     <Route exact path='/login' component={LoginComponent} />
                     <Route exact path='/signup' component={SignUpMainComponent} />
                     <Route exact path='/home' component={Home} />
