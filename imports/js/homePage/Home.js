@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 
 import "/imports/css/home/Home.css";
-import PropTypes from "prop-types";
-import ButtonPanel from "./ButtonPanel";
+// import PropTypes from "prop-types";
 
 export default class Home extends Component {
 
