@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Bucket from 'imports/js/buckets/BucketView';
 
-import 'imports/css/bucket/bucketSheet.css';
+import Bucket from "../buckets/BucketView";
+import "../../css/bucket/bucketSheet.css";
 
 export default class Profile extends Component {
 

@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 
-import CheckBox from 'imports/js/utils/CheckBox.js';
-import isChecked from '/../../imports/utils/CheckBox';
+import CheckBox from '../utils/CheckBox';
+import isChecked from '../utils/CheckBox';
 
-import ActiveLists from 'imports/db/client/collections/activeBucketCollections/ActiveList';
-import ReserveLists from 'imports/db/client/collections/reserveBucketCollections/ReserveList';
+import ActiveLists from '../../db/client/collections/activeBucketCollections/ActiveList';
+import ReserveLists from '../../db/client/collections/reserveBucketCollections/ReserveList';
 //import EventList from "./userLists/ListView";
 
 

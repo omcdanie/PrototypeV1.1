@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 import EventList from "./userLists/ListView";
 //import ActiveLists from 'imports/db/client/collections/activeBucketCollections/ActiveList';
-import ReserveLists from 'imports/db/client/collections/reserveBucketCollections/ReserveList';
+import ReserveLists from '../../db/client/collections/reserveBucketCollections/ReserveList';
 
 export default class ReserveBucket extends Component {
 

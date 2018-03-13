@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import '../../css/verification/SignUpSheet.css';
 
 import ConfirmSignUpComponent from '../verification/ConfirmSignUp';
+import {setSignedIn} from "../app/Prototype";
 
 export default class SignUpMainComponent extends Component {
 
@@ -12,9 +13,9 @@ export default class SignUpMainComponent extends Component {
     }
 
     render() {
+
         return (
             <div>
-                <Route path="#/signup/:confirm" component={ConfirmSignUpComponent}/>
                 <form onSubmit={this.submitSignUp.bind(this)}>
                     <div className="signUp">
                         <h1 className="signUpHeader">Sign up for free!</h1>
@@ -23,11 +24,11 @@ export default class SignUpMainComponent extends Component {
                         <input id="email" type="email" placeholder="E-mail" /><br/>
                         <input id="userid" type="text" placeholder="Username" /><br/>
                         <input id="password" type="password" placeholder="Password" /><br/>
-                        <input id="confirmPassword" type="password" placeholder="Confirm password" /><br/>
-                        <h6> Birth date </h6>
-                        <input id="birthday" type="date" /><br/>
-                        <h6>Male</h6><input id="male" type="radio" value="male" onChange={this.deselectFemale}/>
-                        <h6>Female</h6><input id="female" type="radio" value="female" onChange={this.deselectMale}/><br/>
+                        <input id="confirmPassword" type="password" placeholder="Confirm password" />
+                        <p> Birth date </p>
+                        <input id="birthday" type="date" placeholder="MM/DD/YYYY"/><br/><br/>
+                        <label><input id="male" type="radio" value="male" onChange={this.deselectFemale}/>Male</label>
+                        <label><input id="female" type="radio" value="female" onChange={this.deselectMale}/>Female</label><br/><br/>
                         <input type="button" value="Cancel" onClick={this.cancelClick}/>
                         <input type="submit" value="Sign Up!"/><br/>
                     </div>
@@ -112,7 +113,9 @@ export default class SignUpMainComponent extends Component {
             return;
         }
 
-        this.props.history.push("/signup/confirm");
+        setSignedIn(true);
+
+        this.props.history.push("/confirm");
 
     };
 

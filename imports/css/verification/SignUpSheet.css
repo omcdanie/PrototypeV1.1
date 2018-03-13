@@ -2,24 +2,28 @@
 
 .signUp {
     position: absolute;
-    top: 175px;
+    top: 225px;
     left: calc(50% - 175px);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .signUp h1 {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    color: #A9A9A9;
+    color: #063651;
     margin-bottom: 6px;
 }
 
-.signUp h6 {
-    font-family: 'Open Sans', sans-serif;
+.signUp p {
     font-weight: 200;
     font-size: medium;
-    color: #A9A9A9;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    color: #063651;
+}
+
+.signUp label {
+    font-weight: 200;
+    font-size: medium;
+    color: #063651;
+    padding-right: 8px;
 }
 
 .signUp input[type=text] {
@@ -28,8 +32,7 @@
     background: RGBA(212, 84, 27, 0.1);
     border: 1px solid RGBA(212, 84, 27, 1.00);
     border-radius: 5px;
-    color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
+    color: #063651;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
@@ -42,8 +45,7 @@
     background: RGBA(212, 84, 27, 0.1);
     border: 1px solid RGBA(212, 84, 27, 1.00);
     border-radius: 5px;
-    color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
+    color: #063651;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
@@ -56,8 +58,7 @@
     background: RGBA(212, 84, 27, 0.1);
     border: 1px solid RGBA(212, 84, 27, 1.00);
     border-radius: 5px;
-    color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
+    color: #063651;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
@@ -70,12 +71,15 @@
     background: RGBA(212, 84, 27, 0.1);
     border: 1px solid #D4541B;
     border-radius: 5px;
-    color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
+    color: #063651;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
     margin-bottom: 8px;
+}
+
+.signUp input[type=radio] {
+    margin-right: 8px;
 }
 
 .signUp input[type=submit] {
@@ -86,25 +90,23 @@
     background: #D4541B;
     cursor: pointer;
     border-radius: 5px;
-    color: #063651;
-    font-family: 'Open Sans', sans-serif;
+    color: ghostwhite;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
     margin-top: 16px;
 }
 
 .signUp input[type=button] {
-    border: 1px solid #A9A9A9;
+    border: 1px solid #063651;
     float: left;
     width: 170px;
     height: 35px;
-    background: #A9A9A9;
+    background: #063651;
     cursor: pointer;
     border-radius: 5px;
-    color: #063651;
-    font-family: 'Open Sans', sans-serif;
+    color: ghostwhite;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
     margin-top: 16px;
 }
 
