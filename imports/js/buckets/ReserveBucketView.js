@@ -1,16 +1,16 @@
 import React, {Component} from "react";
 
-import EventList from "./userLists/ListView";
-//import ActiveLists from 'imports/db/client/collections/activeBucketCollections/ActiveList';
-import ReserveLists from '../../db/client/collections/reserveBucketCollections/ReserveList';
+// import EventList from "./userLists/ListView";
+// //import ActiveLists from 'imports/db/client/collections/activeBucketCollections/ActiveList';
+// import ReserveLists from '../../db/client/collections/reserveBucketCollections/ReserveList';
 
 export default class ReserveBucket extends Component {
 
     constructor(props) {
         super(props);
 
-        this.handleMakeGoalActive = this.handleMakeGoalActive.bind(this);
-        this.handleSelect = this.handleSelect.bind(this);
+        // this.handleMakeGoalActive = this.handleMakeGoalActive.bind(this);
+        // this.handleSelect = this.handleSelect.bind(this);
     }
 
 
@@ -30,14 +30,14 @@ export default class ReserveBucket extends Component {
                        compatibility
                        https://github.com/Fyrd/purejs-datalist-polyfill
                      */}
-                    <datalist
-                        className="reserve-bucket-combo-box"
-                        id="something"
-                    >
-                        <option>
-                            {ReserveLists.find({name}).fetch()}
-                        </option>
-                    </datalist>
+                    {/*<datalist*/}
+                        {/*className="reserve-bucket-combo-box"*/}
+                        {/*id="something"*/}
+                    {/*>*/}
+                        {/*<option>*/}
+                            {/*{ReserveLists.find({name}).fetch()}*/}
+                        {/*</option>*/}
+                    {/*</datalist>*/}
                 </form>
                 <button
                     className="bucket-button"
@@ -62,7 +62,7 @@ export default class ReserveBucket extends Component {
     }
 
     static handleDisplayGoal() {
-        return (<EventList/>);
+       // return (<EventList/>);
     }
 
     handleMakeGoalActive() {

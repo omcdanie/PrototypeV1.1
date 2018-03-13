@@ -132,6 +132,7 @@ export default class ActiveBucket extends Component {
                 location: newItems.location,
                 description: newItems.description
             });
+            window.alert("Adding " + this.state.name + " to ReserveBucket.");
             //ReserveLists.find().fetch();
         } else {
             ActiveLists.insert({
@@ -139,6 +140,7 @@ export default class ActiveBucket extends Component {
                 location: newItems.location,
                 description: newItems.description
             });
+            window.alert("Adding " + this.state.name + " to ReserveBucket.");
             //ActiveLists.find().fetch();
         }
     }
