@@ -29,7 +29,7 @@ class LoginComponent extends Component {
                     </div>
                 </form>
                 {this.state.fireRedirect && (
-                    <Redirect to='#/home'/>
+                    <Redirect to='/profile'/>
                 )}
             </div>
         );
