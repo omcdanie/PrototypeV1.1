@@ -21,7 +21,7 @@ export default class Prototype extends Component {
                     <Route exact path='/signup' component={SignUpMainComponent} />
                     <Route exact path='/home' component={Home} />
                     <Route exact path='/confirm' component={ConfirmSignUpComponent} />
-                    <Route exact path='/Profile' component={Profile} />
+                    <Route exact path='/profile' component={Profile} />
                 </div>
             </BrowserRouter>
         );
