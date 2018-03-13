@@ -15,10 +15,11 @@ export default class Prototype extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Route path='/' component={BannerComponent} />
-                    <Route path='/login' component={LoginComponent} />
-                    <Route path='/home' component={Home} />
-                    <Route path='/Profile' component={Profile} />
+                    <Route exact path='/' component={BannerComponent} />
+                    <Route exact path='/login' component={LoginComponent} />
+                    <Route exact path='/signup' component={SignUpMainComponent} />
+                    <Route exact path='/home' component={Home} />
+                    <Route exact path='/Profile' component={Profile} />
                 </div>
             </BrowserRouter>
         );
