@@ -2,17 +2,19 @@
   "name": "hello",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.36",
     "classnames": "^2.2.5",
     "imports": "^1.0.0",
     "meteor-node-stubs": "^0.3.2",
+    "mocha": "^5.0.4",
     "prop-types": "latest",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router":"^4.2.0",
+    "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   }
 }
