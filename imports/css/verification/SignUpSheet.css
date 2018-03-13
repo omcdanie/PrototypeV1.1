@@ -4,22 +4,26 @@
     position: absolute;
     top: 175px;
     left: calc(50% - 175px);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .signUp h1 {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 200;
     color: #A9A9A9;
     margin-bottom: 6px;
 }
 
-.signUp h6 {
-    font-family: 'Open Sans', sans-serif;
+.signUp p {
     font-weight: 200;
     font-size: medium;
     color: #A9A9A9;
-    margin-top: 8px;
-    margin-bottom: 8px;
+}
+
+.signUp label {
+    font-weight: 200;
+    font-size: medium;
+    color: #A9A9A9;
+    padding-right: 8px;
 }
 
 .signUp input[type=text] {
@@ -29,7 +33,6 @@
     border: 1px solid RGBA(212, 84, 27, 1.00);
     border-radius: 5px;
     color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
@@ -43,7 +46,6 @@
     border: 1px solid RGBA(212, 84, 27, 1.00);
     border-radius: 5px;
     color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
@@ -57,7 +59,6 @@
     border: 1px solid RGBA(212, 84, 27, 1.00);
     border-radius: 5px;
     color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
@@ -71,11 +72,14 @@
     border: 1px solid #D4541B;
     border-radius: 5px;
     color: #A9A9A9;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
     margin-bottom: 8px;
+}
+
+.signUp input[type=radio] {
+    margin-right: 8px;
 }
 
 .signUp input[type=submit] {
@@ -87,7 +91,6 @@
     cursor: pointer;
     border-radius: 5px;
     color: #063651;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin-top: 16px;
@@ -102,7 +105,6 @@
     cursor: pointer;
     border-radius: 5px;
     color: #063651;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin-top: 16px;
