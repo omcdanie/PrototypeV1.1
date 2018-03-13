@@ -4,8 +4,8 @@ import {Route, BrowserRouter} from 'react-router-dom';
 import LogoComponent from '../app/Logo';
 import LoginComponent from '../verification/LoginView';
 import SignUpMainComponent from '../verification/SignUpMain';
-import ConfirmSignUpComponent from '../verification/ConfirmSignUp';
-import Home from '../homePage/HomePageView';
+import Home from '../homePage/Home';
+import ConfirmSignUpComponent from '../verification/ConfirmSignUp';\
 import Profile from '../profiles/ProfilePageView';
 
 let isSignedIn = false;
