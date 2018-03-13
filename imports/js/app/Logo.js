@@ -12,13 +12,15 @@ export default class LogoComponent extends Component {
         return (
             <div className='logo'>
                 <Link to={{pathname: getLogoLink()}}>Bucketful</Link>
-                {componentList}
+                {componentList.map((component) => (
+                    <Link activeclassname={component.name} to={{pathname: component.path}}>{component.title}</Link>
+                ))}
             </div>
         );
     }
 }
 
 export function showLinks() {
-    componentList.push(<Link activeClassName="home" to={{pathname: '/home'}}>home</Link>);
-    componentList.push(<Link activeClassName="profile" to={{pathname: '/profile'}}>profile</Link>);
+    componentList.push({name:"home", path:"/home", title:'home'});
+    componentList.push({name:"profile", path:"/profile", title:'profile'});
 }
