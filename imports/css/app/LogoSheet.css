@@ -11,6 +11,20 @@ body {
     background-color: #063651;
 }
 
+.logo a[activeClassName=profile] {
+    float: right;
+    font-size: 22px;
+    margin-right: 15px;
+    margin-top: 175px;
+}
+
+.logo a[activeClassName=home] {
+    float: right;
+    font-size: 22px;
+    margin-right: 50px;
+    margin-top: 175px;
+}
+
 .logo a {
     font-family: 'Open Sans', sans-serif;
     float: left;

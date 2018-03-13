@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import {getSignedIn} from "../app/Prototype";
+import LayoutComponent from "../app/Layout";
+import {getSignedIn} from "../utils/GlobalFunctions";
 
 export default class ConfirmSignUpComponent extends Component {
 
@@ -20,7 +21,7 @@ export default class ConfirmSignUpComponent extends Component {
             );
         } else {
             return (
-                <div>
+                <LayoutComponent>
                     <h3>Thank you for signing up!</h3><br/><br/>
                     <p>Now you may explore Bucketful items, add to your goals and start ticking items off your bucket
                         list.
@@ -29,7 +30,7 @@ export default class ConfirmSignUpComponent extends Component {
                         so please feel free to share your thoughts with us by using our feedback link. Thanks!</p>
                     <br/><br/>
                     <Link to={{pathname: "/home"}}>Check out my homepage</Link>
-                </div>
+                </LayoutComponent>
             );
         }
     }

@@ -5,6 +5,7 @@ import '../../css/verification/SignUpSheet.css';
 
 import ConfirmSignUpComponent from '../verification/ConfirmSignUp';
 import {setSignedIn} from "../app/Prototype";
+import LayoutComponent from "../app/Layout";
 
 export default class SignUpMainComponent extends Component {
 
@@ -15,7 +16,7 @@ export default class SignUpMainComponent extends Component {
     render() {
 
         return (
-            <div>
+            <LayoutComponent>
                 <form onSubmit={this.submitSignUp.bind(this)}>
                     <div className="signUp">
                         <h1 className="signUpHeader">Sign up for free!</h1>
@@ -33,7 +34,7 @@ export default class SignUpMainComponent extends Component {
                         <input type="submit" value="Sign Up!"/><br/>
                     </div>
                 </form>
-            </div>
+            </LayoutComponent>
         );
     }
 
