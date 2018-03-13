@@ -5,7 +5,7 @@ import LogoComponent from '../app/Logo';
 import LoginComponent from '../verification/LoginView';
 import SignUpMainComponent from '../verification/SignUpMain';
 import Home from '../homePage/Home';
-import ConfirmSignUpComponent from '../verification/ConfirmSignUp';\
+import ConfirmSignUpComponent from '../verification/ConfirmSignUp';
 import Profile from '../profiles/ProfilePageView';
 
 let isSignedIn = false;

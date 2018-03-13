@@ -162,12 +162,6 @@
     grid-row: 4;
 }
 
-body {
-    margin: 0 auto;
-    max-width: 56em;
-    padding: 1em 0;
-}
-
 .grid {
     /* Grid Fallback */
     display: flex;
