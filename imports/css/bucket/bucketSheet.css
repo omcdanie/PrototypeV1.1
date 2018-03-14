@@ -1,19 +1,110 @@
-.bucket-box {
+.bucket-container {
+    display: inline-flex;
+    margin: 15px;
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 7px;
+}
+
+.bucket-box-left {
+    display: inline-block;
     background-color: #A9A9A9;
-    border: #D4541B 5px;
+    border-radius: 5px;
     padding: 15px;
+    width: 206px;
+    height: auto;
+    margin: 10px;
+    float: left;
+    align-content: center;
+}
+
+.bucket-box-right {
+    display: inline-block;
+    background-color: #A9A9A9;
+    border-radius: 5px;
+    padding: 15px;
+    width: 206px;
+    height: auto;
+    margin: 10px;
+    float: left;
     align-content: center;
 }
 
 .list-box {
-    background-color: #0f4f73;
-    border: #D4541B;
-    padding: 5px;
+    display: inline-block;
+    background-color: whitesmoke;
+    width: 200px;
+    margin: 3px;
+    border: 3px black;
+    border-radius: 5px;
     align-content: center;
 }
 
-.bucket-title-font {
+ul.number-box {
+    -webkit-padding-start: inherit !important;
+}
+
+input:checked.checkbox{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 0;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #112222;
+}
+
+input[type="checkbox"]:empty.checkbox {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 0;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: white !important;
+}
+
+label.bucket-checkbox-label {
+    display: inline-block;
     font-family: Magneto, fantasy;
-    font-size: 1.75em; /*28px/16 = 1.75em*/
-    text-align: center;
+    position: inherit;
+    height: 20px;
+    font-size: 14px;
+}
+
+button.bucket-button {
+    display: inline-block;
+    margin-top: 5px;
+    width: 205px;
+    border-radius: 5px;
+    background-color: #0f4f73;
+}
+
+input.bucket-input {
+    display: inline-block;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h3.bucket-button-font {
+    font-family: Magneto, fantasy;
+    text-align: match-parent;
+    color: white;
+}
+
+h2.bucket-title-font {
+    font-family: Magneto, fantasy;
+    text-align: match-parent;
+    color: #0f4f73;
+}
+
+select.reserve-bucket-combo-box {
+    display: inline-block;
+    border-radius: 5px;
+    width: 206px;
+}
+
+body {
+    background-color: ghostwhite;
 }

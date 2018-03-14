@@ -1,31 +1,16 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 
-import activeUser from '/imports/js/verification/LoginView';
-import Bucket from '/imports/js/buckets/BucketView';
+import Bucket from "../buckets/BucketView";
+import "../../css/bucket/bucketSheet.css";
+import LayoutComponent from "../app/Layout";
 
-import bucketStyle from '/imports/css/bucket/bucketSheet.css';
-
-class Profile extends Component {
-    constructor(props) {
-        super(props);
-
-        this.activeUser = {activeUser};
-    }
+export default class Profile extends Component {
 
     render() {
-        return (
-            <div className={bucketStyle["bucket-box"]}>
-                <Bucket>
-                    <h2>Active</h2>
-
-                </Bucket>
-                <Bucket>
-                    <h2>Reserve</h2>
-
-                </Bucket>
-            </div>
+        return(
+            <LayoutComponent>
+                <Bucket/>
+            </LayoutComponent>
         );
     }
 }
-
-export default Profile;
